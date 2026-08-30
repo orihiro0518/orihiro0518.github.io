@@ -4,59 +4,425 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name='impact-site-verification' value='28af85ef-9382-48ad-ba12-db7d2229e88a'>
-  <title>ORIVECTOR｜AWS・IT資格の無料学習・問題演習サイト</title>
-  <meta name="description" content="ORIVECTOR（オリベクター）は、AWSをはじめとするIT資格の基礎学習・暗記・問題演習を無料で学べる学習サイトです。ネットワークスペシャリストや情報処理安全確保支援士などにも順次対応します。">
+
+  <title>ORIVECTOR｜AWS Cloud Practitioner・IT資格の無料学習サイト</title>
+  <meta name="description" content="ORIVECTOR（オリベクター）は、AWS Cloud Practitioner（クラウドプラクティショナー）を中心に、IT資格の基礎学習・暗記・問題演習を無料で学べる学習サイトです。">
   <link rel="canonical" href="https://orivector.jp/">
   <meta name="robots" content="index,follow,max-image-preview:large">
-  <meta name="theme-color" content="#08111f">
+  <meta name="theme-color" content="#020817">
+
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ja_JP">
   <meta property="og:site_name" content="ORIVECTOR">
-  <meta property="og:title" content="ORIVECTOR｜AWS・IT資格の無料学習・問題演習サイト">
-  <meta property="og:description" content="AWSをはじめとするIT資格を、基礎学習・暗記・問題演習で効率よく学べる無料学習サイト。">
+  <meta property="og:title" content="ORIVECTOR｜AWS Cloud Practitioner・IT資格の無料学習サイト">
+  <meta property="og:description" content="AWS Cloud Practitionerを中心に、IT資格を効率よく学べる無料学習サイト。">
   <meta property="og:url" content="https://orivector.jp/">
   <meta name="twitter:card" content="summary">
+
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"WebSite","name":"ORIVECTOR","alternateName":"オリベクター","url":"https://orivector.jp/","description":"AWSをはじめとするIT資格の基礎学習・暗記・問題演習を提供する無料学習サイト。","inLanguage":"ja-JP"}
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"ORIVECTOR",
+    "alternateName":"オリベクター",
+    "url":"https://orivector.jp/",
+    "description":"AWS Cloud Practitionerを中心としたIT資格の無料学習サイト。",
+    "inLanguage":"ja-JP"
+  }
   </script>
+
   <style>
-    :root{--bg:#08111f;--card:#101c2d;--text:#f6f8fb;--muted:#9fb0c6;--accent:#75e6c4;--blue:#66a7ff}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Sans","Yu Gothic",sans-serif;background:radial-gradient(circle at 10% 0%,rgba(102,167,255,.18),transparent 35%),linear-gradient(180deg,#07101e,#0a1321);line-height:1.7}
-    a{color:inherit;text-decoration:none}.wrap{width:min(calc(100% - 30px),1100px);margin:auto}
-    header{position:sticky;top:0;z-index:5;background:rgba(7,16,30,.8);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.07)}
-    nav{height:66px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:900;letter-spacing:.08em}.navlink{color:var(--muted);font-size:14px}
-    .hero{text-align:center;padding:90px 0 60px}.eyebrow{display:inline-block;padding:6px 12px;border:1px solid rgba(117,230,196,.25);border-radius:99px;color:#baf5e3;font-size:13px;font-weight:700}
-    h1{font-size:clamp(42px,8vw,78px);line-height:1.05;letter-spacing:-.045em;margin:22px auto 15px;max-width:900px;background:linear-gradient(90deg,#fff,#bfe3ff,#8ef1d2);background-clip:text;-webkit-background-clip:text;color:transparent}
-    .lead{max-width:680px;margin:auto;color:var(--muted);font-size:clamp(16px,2.4vw,20px)}.actions{margin-top:28px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-    .btn{padding:12px 20px;border-radius:14px;font-weight:800}.primary{background:var(--accent);color:#05131a}.secondary{border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.05)}
-    section.content{padding:42px 0 72px}h2{font-size:clamp(27px,4vw,38px);margin:0 0 8px}.sub{color:var(--muted);margin:0 0 22px}
-    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card,.info{position:relative;padding:24px;border:1px solid rgba(255,255,255,.1);border-radius:24px;background:rgba(255,255,255,.055);min-height:235px}
-    .tag{display:inline-block;padding:4px 9px;border-radius:99px;font-size:12px;font-weight:800;background:rgba(102,167,255,.12);color:#bdd8ff}.card h3{font-size:23px;margin:20px 0 7px}.card p,.info p{color:var(--muted);font-size:14px;margin:0}.go{position:absolute;bottom:20px;left:24px;font-weight:800;color:#dffdf4}.soon{opacity:.7}
-    .info{min-height:auto;margin-top:18px}.info h2{font-size:24px}footer{border-top:1px solid rgba(255,255,255,.07);padding:28px 0 38px;color:#7f91a8;font-size:13px}
-    @media(max-width:800px){.cards{grid-template-columns:1fr}.hero{padding-top:60px}.navlink{display:none}}
+    :root{
+      --bg:#020817;
+      --bg2:#061126;
+      --panel:#081527;
+      --panel2:#0b1b31;
+      --line:rgba(140,180,230,.16);
+      --text:#f7fbff;
+      --muted:#a9b7ca;
+      --blue:#1687ff;
+      --blue2:#1b67ff;
+      --green:#24cc8b;
+      --purple:#7665ff;
+      --orange:#ffae2c;
+      --max:1180px;
+      --r:22px;
+      --shadow:0 30px 80px rgba(0,0,0,.28);
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      min-height:100vh;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Sans","Yu Gothic",Meiryo,sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at 76% 18%, rgba(17,99,255,.15), transparent 28%),
+        radial-gradient(circle at 15% 8%, rgba(0,126,255,.09), transparent 23%),
+        linear-gradient(180deg,#020817 0%,#04101f 60%,#03101d 100%);
+      line-height:1.75;
+    }
+
+    body:before{
+      content:"";
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      background-image:
+        linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),
+        linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);
+      background-size:44px 44px;
+      mask-image:linear-gradient(to bottom,black,transparent 78%);
+      opacity:.35;
+    }
+
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(calc(100% - 36px),var(--max));margin:auto}
+
+    header{
+      position:sticky;top:0;z-index:50;
+      background:rgba(2,8,23,.78);
+      backdrop-filter:blur(16px);
+      border-bottom:1px solid rgba(255,255,255,.055);
+    }
+    .nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:900;letter-spacing:.05em}
+    .logo{
+      width:34px;height:34px;border-radius:10px;
+      background:linear-gradient(145deg,#1d9fff,#1c58ff);
+      clip-path:polygon(50% 0,92% 23%,92% 77%,50% 100%,8% 77%,8% 23%);
+      position:relative;
+      box-shadow:0 0 28px rgba(28,104,255,.45);
+    }
+    .logo:after{
+      content:"";
+      position:absolute;inset:8px;
+      background:#07182f;
+      clip-path:inherit;
+    }
+    .navlinks{display:flex;gap:28px;align-items:center;font-size:14px;font-weight:700;color:#d9e4f1}
+    .navlinks a.active{color:#29a0ff}
+    .top-cta{
+      padding:11px 18px;border-radius:999px;font-weight:800;font-size:14px;
+      background:linear-gradient(135deg,#1898ff,#2356ff);
+      box-shadow:0 14px 40px rgba(22,112,255,.22)
+    }
+
+    .hero{padding:88px 0 68px}
+    .hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:48px;align-items:center}
+    .pill{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:7px 14px;border-radius:999px;
+      background:rgba(18,93,192,.25);
+      border:1px solid rgba(70,155,255,.18);
+      color:#d8ebff;font-size:13px;font-weight:800
+    }
+    h1{
+      margin:24px 0 16px;
+      font-size:clamp(48px,7.4vw,82px);
+      line-height:1.03;
+      letter-spacing:-.045em;
+      max-width:760px
+    }
+    .accent{color:#1e86ff}
+    .hero p{font-size:18px;color:#c7d2df;max-width:720px;margin:0}
+    .benefits{display:flex;gap:28px;margin-top:34px;flex-wrap:wrap}
+    .benefit{display:flex;align-items:center;gap:12px}
+    .round{
+      width:38px;height:38px;border-radius:50%;
+      display:grid;place-items:center;
+      border:1px solid rgba(80,160,255,.35);
+      background:#07172d;color:#62afff;font-weight:900
+    }
+    .benefit strong{display:block;font-size:14px}
+    .benefit span{display:block;font-size:12px;color:var(--muted)}
+    .actions{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap}
+    .btn{
+      min-height:50px;padding:0 24px;border-radius:999px;
+      display:inline-flex;align-items:center;justify-content:center;
+      font-weight:900;font-size:14px;border:1px solid var(--line)
+    }
+    .btn.primary{background:linear-gradient(135deg,#1aa0ff,#1f5eff);border:none}
+    .btn.secondary{background:rgba(255,255,255,.02)}
+
+    .visual{position:relative;min-height:480px}
+    .glow{
+      position:absolute;inset:18% 10% 16%;
+      background:radial-gradient(circle,rgba(0,111,255,.26),transparent 64%);
+      filter:blur(12px)
+    }
+    .platform{
+      position:absolute;left:50%;bottom:70px;transform:translateX(-50%) rotateX(62deg) rotateZ(45deg);
+      width:280px;height:280px;border-radius:32px;
+      background:linear-gradient(145deg,#0f92ff,#043770 55%,#031228);
+      box-shadow:0 35px 80px rgba(0,93,255,.28);
+      border:1px solid rgba(65,151,255,.5)
+    }
+    .platform:after{
+      content:"";position:absolute;inset:38px;border:4px solid #26b7ff;border-radius:28px;
+      box-shadow:inset 0 0 30px rgba(38,183,255,.35),0 0 34px rgba(38,183,255,.35)
+    }
+    .cube{
+      position:absolute;left:50%;top:72px;transform:translateX(-50%);
+      width:180px;height:210px;border-radius:26px;
+      border:1px solid rgba(44,139,255,.55);
+      background:linear-gradient(180deg,rgba(7,32,70,.42),rgba(3,13,30,.7));
+      box-shadow:0 0 60px rgba(0,112,255,.12)
+    }
+    .cube .logo-big{
+      width:92px;height:92px;position:absolute;left:50%;top:54px;transform:translateX(-50%);
+      clip-path:polygon(50% 0,92% 23%,92% 77%,50% 100%,8% 77%,8% 23%);
+      background:linear-gradient(145deg,#78d5ff,#1478ff)
+    }
+    .cube .logo-big:after{
+      content:"";position:absolute;inset:23px;background:#0a2b57;clip-path:inherit
+    }
+    .float-card{
+      position:absolute;width:128px;height:128px;border-radius:18px;
+      border:1px solid rgba(45,140,255,.42);
+      background:linear-gradient(180deg,rgba(9,31,66,.9),rgba(5,19,42,.82));
+      display:grid;place-items:center;text-align:center;
+      box-shadow:0 18px 50px rgba(0,0,0,.25);
+      font-weight:800;color:#eaf5ff
+    }
+    .aws-card{left:5%;top:95px;font-size:23px}
+    .network-card{right:2%;bottom:80px;font-size:13px}
+    .cloud-card{right:6%;top:150px;font-size:42px}
+
+    .section{padding:18px 0 78px}
+    .section-panel{
+      border:1px solid rgba(255,255,255,.055);
+      border-radius:26px;
+      background:linear-gradient(180deg,rgba(8,22,42,.92),rgba(4,15,30,.9));
+      padding:28px;
+      box-shadow:var(--shadow)
+    }
+    .section h2{font-size:28px;margin:0 0 22px;letter-spacing:-.02em}
+    .underline{width:42px;height:3px;background:var(--blue);border-radius:2px;margin-top:4px}
+
+    .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .card{
+      min-height:285px;padding:24px;border-radius:18px;
+      border:1px solid rgba(140,180,230,.16);
+      background:linear-gradient(180deg,rgba(12,31,56,.93),rgba(7,20,39,.93));
+      display:flex;flex-direction:column;
+      transition:.22s ease;
+    }
+    .card:hover{transform:translateY(-5px);border-color:rgba(61,150,255,.42)}
+    .icon{font-size:38px;min-height:58px;display:flex;align-items:center}
+    .card h3{font-size:18px;margin:15px 0 8px}
+    .card p{color:var(--muted);font-size:13px;margin:0}
+    .card .link{margin-top:auto;padding-top:20px;color:#1aa0ff;font-weight:800;font-size:13px}
+
+    .badge{
+      display:inline-flex;margin-left:6px;transform:translateY(-2px);
+      padding:3px 7px;border-radius:6px;background:#175cff;
+      font-size:10px;font-weight:900
+    }
+
+    .lower{display:grid;grid-template-columns:.74fr 1.26fr;gap:18px}
+    .feature-box,.news-box{
+      border:1px solid rgba(140,180,230,.16);
+      border-radius:20px;
+      background:linear-gradient(180deg,rgba(10,27,50,.94),rgba(6,18,36,.95));
+      padding:24px
+    }
+    .feature-box h2,.news-box h2{font-size:23px;margin:0 0 20px}
+    .feature{display:flex;gap:14px;margin:19px 0}
+    .check{
+      width:34px;height:34px;border-radius:50%;flex:0 0 auto;
+      display:grid;place-items:center;
+      border:1px solid rgba(37,117,255,.55);
+      background:rgba(16,87,202,.18);color:#2b94ff;font-weight:900
+    }
+    .feature strong{font-size:14px}
+    .feature p{margin:2px 0 0;color:var(--muted);font-size:12px}
+    .news{padding:16px 0;border-top:1px solid rgba(255,255,255,.075)}
+    .news:first-of-type{border-top:none;padding-top:0}
+    .news-meta{display:flex;gap:10px;align-items:center;color:#9cafc4;font-size:11px}
+    .news-tag{padding:2px 7px;border-radius:5px;background:#165bdc;color:white;font-weight:800}
+    .news h3{font-size:15px;margin:6px 0 2px}
+    .news p{font-size:12px;color:var(--muted);margin:0}
+
+    footer{
+      margin-top:10px;padding:42px 0 28px;
+      border-top:1px solid rgba(255,255,255,.06);
+      background:linear-gradient(180deg,rgba(4,15,30,.15),rgba(8,25,46,.72))
+    }
+    .footer-grid{display:grid;grid-template-columns:1.1fr .7fr .7fr .9fr;gap:34px}
+    footer h4{margin:0 0 10px;font-size:14px}
+    footer p,footer a{color:#aab7c8;font-size:12px}
+    footer a{display:block;margin:4px 0}
+    .copyright{text-align:center;margin-top:28px;color:#7e8ea3;font-size:11px}
+
+    @media(max-width:980px){
+      .navlinks{display:none}
+      .hero-grid{grid-template-columns:1fr}
+      .visual{min-height:390px}
+      .cards{grid-template-columns:repeat(2,1fr)}
+      .lower{grid-template-columns:1fr}
+      .footer-grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media(max-width:640px){
+      .wrap{width:min(calc(100% - 22px),var(--max))}
+      .top-cta{display:none}
+      .hero{padding-top:56px}
+      h1{font-size:46px}
+      .hero p{font-size:16px}
+      .benefits{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+      .visual{min-height:330px}
+      .platform{width:220px;height:220px;bottom:55px}
+      .cube{width:150px;height:176px;top:54px}
+      .float-card{width:96px;height:96px}
+      .aws-card{left:0;top:76px;font-size:18px}
+      .cloud-card{right:0;top:115px;font-size:32px}
+      .network-card{right:0;bottom:52px;font-size:11px}
+      .section-panel{padding:20px}
+      .cards{grid-template-columns:1fr}
+      .card{min-height:235px}
+      .footer-grid{grid-template-columns:1fr}
+    }
   </style>
 </head>
 <body>
-<header><div class="wrap"><nav><a class="brand" href="/">ORIVECTOR</a><a class="navlink" href="#learn">学習コンテンツ</a></nav></div></header>
-<main>
-  <section class="hero"><div class="wrap">
-    <span class="eyebrow">LEARN • BUILD • GROW</span>
-    <h1>資格学習を、もっと効率的に。</h1>
-    <p class="lead">ORIVECTORは、AWSをはじめとするIT資格を「理解する・覚える・解く」の流れで学べる無料学習サイトです。</p>
-    <div class="actions"><a class="btn primary" href="/aws-study/">AWSを学ぶ →</a><a class="btn secondary" href="#learn">コンテンツを見る</a></div>
-  </div></section>
+<header>
+  <div class="wrap nav">
+    <a href="/" class="brand"><span class="logo"></span><span>ORIVECTOR</span></a>
+    <nav class="navlinks">
+      <a class="active" href="/">HOME</a>
+      <a href="/aws-study/">AWS（CLF）</a>
+      <a href="#categories">ネスペ</a>
+      <a href="#roadmap">学習ロードマップ</a>
+      <a href="#blog">ブログ</a>
+      <a href="#about">運営者情報</a>
+    </nav>
+    <a class="top-cta" href="/aws-study/">学習を始める →</a>
+  </div>
+</header>
 
-  <section class="content" id="learn"><div class="wrap">
-    <h2>資格学習コンテンツ</h2><p class="sub">基礎学習から問題演習まで。対応資格を順次追加していきます。</p>
-    <div class="cards">
-      <a class="card" href="/aws-study/"><span class="tag">公開中</span><h3>AWS</h3><p>AWS資格対策。主要サービスの基礎知識から問題演習まで効率よく学習。</p><span class="go">学習を始める →</span></a>
-      <div class="card soon"><span class="tag">COMING SOON</span><h3>ネットワークスペシャリスト</h3><p>午前・午後対策、暗記ポイント、過去問・予想問題をまとめて学習。</p><span class="go">準備中</span></div>
-      <div class="card soon"><span class="tag">COMING SOON</span><h3>情報処理安全確保支援士</h3><p>セキュリティ分野の基礎理解から実践的な問題演習まで対応予定。</p><span class="go">準備中</span></div>
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="pill">資格でキャリアを、学習で未来を。</span>
+        <h1>資格学習を、<br>もっと<span class="accent">効率的に。</span></h1>
+        <p>AWS Cloud Practitioner（クラウドプラクティショナー）・ネットワークスペシャリストなどの人気資格に対応した、無料問題集とわかりやすい解説で合格をサポートします。</p>
+
+        <div class="benefits">
+          <div class="benefit"><span class="round">✓</span><div><strong>無料で使える</strong><span>本番レベルの問題を収録</span></div></div>
+          <div class="benefit"><span class="round">▤</span><div><strong>わかりやすい解説</strong><span>初心者にもやさしい</span></div></div>
+          <div class="benefit"><span class="round">↗</span><div><strong>効率的な学習</strong><span>最短ルートで合格へ</span></div></div>
+        </div>
+
+        <div class="actions">
+          <a class="btn primary" href="/aws-study/">今すぐ問題を解く →</a>
+          <a class="btn secondary" href="#roadmap">学習ロードマップを見る</a>
+        </div>
+      </div>
+
+      <div class="visual" aria-hidden="true">
+        <div class="glow"></div>
+        <div class="cube"><span class="logo-big"></span></div>
+        <div class="platform"></div>
+        <div class="float-card aws-card">aws<br><small>クラウド<br>プラクティショナー<br>(CLF)</small></div>
+        <div class="float-card cloud-card">☁</div>
+        <div class="float-card network-card">NETWORK<br>⌘</div>
+      </div>
     </div>
-    <div class="info"><h2>無料で学べるIT資格対策</h2><p>ORIVECTORでは、AWSなどのIT資格について、用語の基礎理解から暗記、問題演習までを一つのサイトで学べるコンテンツを提供します。今後はネットワークスペシャリスト、情報処理安全確保支援士などの資格対策コンテンツも順次追加予定です。</p></div>
-    <div class="info"><h2>ORIVECTORについて</h2><p>学習サイト、Webツール、アプリなどを通じて、前に進むための道具をつくる個人開発ブランドです。</p></div>
-  </div></section>
+  </section>
+
+  <section class="section" id="categories">
+    <div class="wrap section-panel">
+      <h2>おすすめカテゴリー<div class="underline"></div></h2>
+      <div class="cards">
+        <a class="card" href="/aws-study/">
+          <div class="icon">aws <span class="badge">CLF</span></div>
+          <h3>AWS認定<br>クラウドプラクティショナー</h3>
+          <p>AWSの基礎知識を証明する入門資格。CLF試験対策の無料問題集と解説を提供。</p>
+          <span class="link">学習を始める →</span>
+        </a>
+
+        <div class="card">
+          <div class="icon">🌐</div>
+          <h3>ネットワークスペシャリスト</h3>
+          <p>ネットワークの専門知識を証明する国家資格。午前・午後対策問題と詳しい解説を準備中。</p>
+          <span class="link">近日公開 →</span>
+        </div>
+
+        <div class="card" id="roadmap">
+          <div class="icon">📘</div>
+          <h3>学習ロードマップ</h3>
+          <p>未経験から合格までの最短学習ステップを、資格ごとにわかりやすく整理。</p>
+          <span class="link">順次公開 →</span>
+        </div>
+
+        <div class="card" id="blog">
+          <div class="icon">✏️</div>
+          <h3>学習ブログ</h3>
+          <p>資格勉強のコツやIT知識、サービス比較などをわかりやすく発信。</p>
+          <span class="link">準備中 →</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap lower">
+      <div class="feature-box">
+        <h2>ORIVECTORの特徴</h2>
+        <div class="feature"><span class="check">✓</span><div><strong>最新の試験傾向に対応</strong><p>出題傾向を確認しながら問題を改善。</p></div></div>
+        <div class="feature"><span class="check">✓</span><div><strong>実践的な問題構成</strong><p>知識を覚えるだけでなく、問題で定着。</p></div></div>
+        <div class="feature"><span class="check">✓</span><div><strong>スキマ時間で学習可能</strong><p>スマホ対応で、いつでもどこでも学習。</p></div></div>
+        <div class="feature"><span class="check">✓</span><div><strong>信頼性を意識した解説</strong><p>公式情報をベースに学習コンテンツを整備。</p></div></div>
+      </div>
+
+      <div class="news-box">
+        <h2>新着情報</h2>
+        <div class="news">
+          <div class="news-meta"><span>2026.08.30</span><span class="news-tag">AWS（CLF）</span></div>
+          <h3>AWS Cloud Practitioner 学習コンテンツを公開</h3>
+          <p>基礎学習・暗記・問題演習をまとめて学べるコンテンツを追加しました。</p>
+        </div>
+        <div class="news">
+          <div class="news-meta"><span>2026.08.30</span><span class="news-tag" style="background:#18865d">ネスペ</span></div>
+          <h3>ネットワークスペシャリスト対策を準備中</h3>
+          <p>午前・午後問題と暗記機能を含む学習コンテンツを順次追加予定です。</p>
+        </div>
+        <div class="news">
+          <div class="news-meta"><span>2026.08.30</span><span class="news-tag" style="background:#6049c8">お知らせ</span></div>
+          <h3>ORIVECTORを公開</h3>
+          <p>資格学習をもっと効率的にするための学習プラットフォームを始動しました。</p>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
-<footer><div class="wrap">© <span id="year"></span> ORIVECTOR</div></footer>
-<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
-</body></html>
+
+<footer id="about">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="brand"><span class="logo"></span><span>ORIVECTOR</span></div>
+        <p>資格学習をもっと効率的に。<br>あなたのキャリアアップをサポートします。</p>
+      </div>
+      <div>
+        <h4>サイトマップ</h4>
+        <a href="/">HOME</a><a href="/aws-study/">AWS（CLF）</a><a href="#categories">ネスペ</a><a href="#roadmap">学習ロードマップ</a>
+      </div>
+      <div>
+        <h4>人気コンテンツ</h4>
+        <a href="/aws-study/">AWS CLF 問題集</a>
+        <a href="#categories">ネスペ対策</a>
+      </div>
+      <div>
+        <h4>運営者情報</h4>
+        <p>ORIVECTOR（オリベクター）</p>
+        <p>IT資格学習サイト運営</p>
+      </div>
+    </div>
+    <div class="copyright">© 2026 ORIVECTOR. All Rights Reserved.</div>
+  </div>
+</footer>
+</body>
+</html>
