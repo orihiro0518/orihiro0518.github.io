@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name='impact-site-verification' value='28af85ef-9382-48ad-ba12-db7d2229e88a'>
 
-  <title>ORIVECTOR｜AWS Cloud Practitioner・IT資格の無料学習サイト</title>
-  <meta name="description" content="ORIVECTOR（オリベクター）は、AWS Cloud Practitioner（クラウドプラクティショナー）を中心に、IT資格の基礎学習・暗記・問題演習を無料で学べる学習サイトです。">
+  <title>ORIVECTOR｜AWS・ネットワークスペシャリストの無料問題集・IT資格学習</title>
+  <meta name="description" content="ORIVECTOR（オリベクター）は、AWS Cloud Practitionerとネットワークスペシャリストを中心に、IT資格の基礎学習・問題演習・復習を無料で学べる学習サイトです。">
   <link rel="canonical" href="https://orivector.jp/">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <meta name="theme-color" content="#020817">
@@ -14,8 +14,8 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ja_JP">
   <meta property="og:site_name" content="ORIVECTOR">
-  <meta property="og:title" content="ORIVECTOR｜AWS Cloud Practitioner・IT資格の無料学習サイト">
-  <meta property="og:description" content="AWS Cloud Practitionerを中心に、IT資格を効率よく学べる無料学習サイト。">
+  <meta property="og:title" content="ORIVECTOR｜AWS・ネットワークスペシャリストの無料問題集・IT資格学習">
+  <meta property="og:description" content="AWS Cloud Practitioner・ネットワークスペシャリストを無料問題集と解説で学べるIT資格学習サイト。">
   <meta property="og:url" content="https://orivector.jp/">
   <meta name="twitter:card" content="summary">
 
@@ -26,7 +26,7 @@
     "name":"ORIVECTOR",
     "alternateName":"オリベクター",
     "url":"https://orivector.jp/",
-    "description":"AWS Cloud Practitionerを中心としたIT資格の無料学習サイト。",
+    "description":"AWS Cloud Practitioner・ネットワークスペシャリストを中心としたIT資格の無料学習サイト。",
     "inLanguage":"ja-JP"
   }
   </script>
@@ -215,6 +215,15 @@
     .card p{color:var(--muted);font-size:13px;margin:0}
     .card .link{margin-top:auto;padding-top:20px;color:#1aa0ff;font-weight:800;font-size:13px}
 
+
+    .release-strip{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+    .release-strip span{padding:7px 11px;border:1px solid var(--line);border-radius:999px;background:rgba(4,18,38,.72);font-size:11px;color:#b9c8da}
+    .release-strip b{color:#fff}
+    .nespe-live{border-color:rgba(36,204,139,.32)}
+    .nespe-live:hover{border-color:rgba(36,204,139,.7);box-shadow:0 18px 48px rgba(36,204,139,.08)}
+    .nespe-live .link{color:#43dfa1}
+    .nespe-badge{background:#18865d}
+
     .badge{
       display:inline-flex;margin-left:6px;transform:translateY(-2px);
       padding:3px 7px;border-radius:6px;background:#175cff;
@@ -292,12 +301,12 @@
     <nav class="navlinks">
       <a class="active" href="/">HOME</a>
       <a href="/aws-study/">AWS（CLF）</a>
-      <a href="#categories">ネスペ</a>
+      <a href="/nespe-study/">ネスペ</a>
       <a href="#roadmap">学習ロードマップ</a>
       <a href="#blog">ブログ</a>
       <a href="#about">運営者情報</a>
     </nav>
-    <a class="top-cta" href="/aws-study/">学習を始める →</a>
+    <a class="top-cta" href="#categories">学習サイトを選ぶ →</a>
   </div>
 </header>
 
@@ -316,8 +325,14 @@
         </div>
 
         <div class="actions">
-          <a class="btn primary" href="/aws-study/">今すぐ問題を解く →</a>
-          <a class="btn secondary" href="#roadmap">学習ロードマップを見る</a>
+          <a class="btn primary" href="#categories">学習サイトを選ぶ →</a>
+          <a class="btn secondary" href="/aws-study/">AWSから始める</a>
+        </div>
+
+        <div class="release-strip">
+          <span>☁️ AWS CLF <b>250問</b></span>
+          <span>🌐 ネスペ 午前II風 <b>500問</b></span>
+          <span>🧠 ネスペ 午後対策 <b>100題</b></span>
         </div>
       </div>
 
@@ -338,17 +353,17 @@
       <div class="cards">
         <a class="card" href="/aws-study/">
           <div class="icon">aws <span class="badge">CLF</span></div>
-          <h3>AWS認定<br>クラウドプラクティショナー</h3>
+          <h3>AWS認定<br>クラウドプラクティショナー</h3><span style="font-size:11px;color:#75c9ff;font-weight:800">● 公開中</span>
           <p>AWSの基礎知識を証明する入門資格。CLF試験対策の無料問題集と解説を提供。</p>
           <span class="link">学習を始める →</span>
         </a>
 
-        <div class="card">
-          <div class="icon">🌐</div>
-          <h3>ネットワークスペシャリスト</h3>
-          <p>ネットワークの専門知識を証明する国家資格。午前・午後対策問題と詳しい解説を準備中。</p>
-          <span class="link">近日公開 →</span>
-        </div>
+        <a class="card nespe-live" href="/nespe-study/">
+          <div class="icon">🌐 <span class="badge nespe-badge">NW</span></div>
+          <h3>ネットワークスペシャリスト</h3><span style="font-size:11px;color:#43dfa1;font-weight:800">● NEW / 公開中</span>
+          <p>午前II風500問・午後問題100題・基礎学習・苦手復習・IPA公式過去問で総合対策。</p>
+          <span class="link">ネスペ対策を始める →</span>
+        </a>
 
         <div class="card" id="roadmap">
           <div class="icon">📘</div>
@@ -382,12 +397,12 @@
         <div class="news">
           <div class="news-meta"><span>2026.08.30</span><span class="news-tag">AWS（CLF）</span></div>
           <h3>AWS Cloud Practitioner 学習コンテンツを公開</h3>
-          <p>基礎学習・暗記・問題演習をまとめて学べるコンテンツを追加しました。</p>
+          <p>250問の問題演習・基礎学習・模擬試験・弱点カテゴリ演習に対応しています。</p>
         </div>
         <div class="news">
-          <div class="news-meta"><span>2026.08.30</span><span class="news-tag" style="background:#18865d">ネスペ</span></div>
-          <h3>ネットワークスペシャリスト対策を準備中</h3>
-          <p>午前・午後問題と暗記機能を含む学習コンテンツを順次追加予定です。</p>
+          <div class="news-meta"><span>2026.08.31</span><span class="news-tag" style="background:#18865d">ネスペ</span></div>
+          <h3>ネットワークスペシャリスト試験対策サイトを追加</h3>
+          <p>午前II風500問・午後問題100題・基礎学習・苦手復習・IPA公式過去問への導線を公開しました。</p>
         </div>
         <div class="news">
           <div class="news-meta"><span>2026.08.30</span><span class="news-tag" style="background:#6049c8">お知らせ</span></div>
@@ -408,12 +423,12 @@
       </div>
       <div>
         <h4>サイトマップ</h4>
-        <a href="/">HOME</a><a href="/aws-study/">AWS（CLF）</a><a href="#categories">ネスペ</a><a href="#roadmap">学習ロードマップ</a>
+        <a href="/">HOME</a><a href="/aws-study/">AWS（CLF）</a><a href="/nespe-study/">ネスペ</a><a href="#roadmap">学習ロードマップ</a>
       </div>
       <div>
         <h4>人気コンテンツ</h4>
         <a href="/aws-study/">AWS CLF 問題集</a>
-        <a href="#categories">ネスペ対策</a>
+        <a href="/nespe-study/">ネスペ対策</a>
       </div>
       <div>
         <h4>運営者情報</h4>
