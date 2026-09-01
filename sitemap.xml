@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://orivector.jp/</loc></url>
+
   <url><loc>https://orivector.jp/aws-study/</loc></url>
   <url><loc>https://orivector.jp/aws-study/roadmap/</loc></url>
   <url><loc>https://orivector.jp/aws-study/about/</loc></url>
@@ -35,4 +36,29 @@
   <url><loc>https://orivector.jp/aws-study/ai-services/</loc></url>
   <url><loc>https://orivector.jp/aws-study/caf/</loc></url>
   <url><loc>https://orivector.jp/aws-study/exam-tips/</loc></url>
+
+  <url><loc>https://orivector.jp/network-specialist-study/</loc></url>
+  <url><loc>https://orivector.jp/network-specialist-study/articles/</loc></url>
+  <url><loc>https://orivector.jp/network-specialist-study/tcp-ip/</loc></url>
+  <url><loc>https://orivector.jp/network-specialist-study/subnetting/</loc></url>
+  <url><loc>https://orivector.jp/network-specialist-study/vlan/</loc></url>
+  <url><loc>https://orivector.jp/network-specialist-study/stp/</loc></url>
+  <url><loc>https://orivector.jp/network-specialist-study/routing/</loc></url>
+  <url><loc>https://orivector.jp/network-specialist-study/ospf/</loc></url>
+  <url><loc>https://orivector.jp/network-specialist-study/bgp/</loc></url>
+  <url><loc>https://orivector.jp/network-specialist-study/dns/</loc></url>
+  <url><loc>https://orivector.jp/network-specialist-study/dhcp/</loc></url>
+  <url><loc>https://orivector.jp/network-specialist-study/nat/</loc></url>
+  <url><loc>https://orivector.jp/network-specialist-study/vpn/</loc></url>
+  <url><loc>https://orivector.jp/network-specialist-study/firewall/</loc></url>
+
+  <url><loc>https://orivector.jp/toeic-study/</loc></url>
+  <url><loc>https://orivector.jp/toeic-study/articles/</loc></url>
+  <url><loc>https://orivector.jp/toeic-study/part5/</loc></url>
+  <url><loc>https://orivector.jp/toeic-study/vocabulary/</loc></url>
+  <url><loc>https://orivector.jp/toeic-study/phrases/</loc></url>
+  <url><loc>https://orivector.jp/toeic-study/grammar/</loc></url>
+  <url><loc>https://orivector.jp/toeic-study/prepositions/</loc></url>
+  <url><loc>https://orivector.jp/toeic-study/participles/</loc></url>
+  <url><loc>https://orivector.jp/toeic-study/relative-clauses/</loc></url>
 </urlset>
