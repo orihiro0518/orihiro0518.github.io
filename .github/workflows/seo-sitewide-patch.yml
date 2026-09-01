@@ -1,0 +1,48 @@
+name: Improve ORIVECTOR SEO
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/seo-sitewide-patch.yml'
+permissions:
+  contents: write
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Patch SEO metadata safely
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('index.html')
+          s=p.read_text(encoding='utf-8')
+          replacements={
+            '<title>ORIVECTOR｜AWS・ネットワークスペシャリストの無料問題集・IT資格学習</title>':'<title>ORIVECTOR｜AWS・ネスペ・TOEICの無料問題集・資格学習</title>',
+            '<meta name="description" content="ORIVECTOR（オリベクター）は、AWS Cloud Practitionerとネットワークスペシャリストを中心に、IT資格の基礎学習・問題演習・復習を無料で学べる学習サイトです。">':'<meta name="description" content="ORIVECTOR（オリベクター）は、AWS Cloud Practitioner、ネットワークスペシャリスト（ネスペ）、TOEICを無料問題集・基礎解説・復習機能で学べる資格学習サイトです。">',
+            '<meta property="og:title" content="ORIVECTOR｜AWS・ネットワークスペシャリストの無料問題集・IT資格学習">':'<meta property="og:title" content="ORIVECTOR｜AWS・ネスペ・TOEICの無料問題集・資格学習">',
+            '<meta property="og:description" content="AWS Cloud Practitioner・ネットワークスペシャリストを無料問題集と解説で学べるIT資格学習サイト。">':'<meta property="og:description" content="AWS Cloud Practitioner・ネットワークスペシャリスト・TOEICを無料問題集と解説で学べる資格学習サイト。">',
+            '"description":"AWS Cloud Practitioner・ネットワークスペシャリストを中心としたIT資格の無料学習サイト。"':'"description":"AWS Cloud Practitioner・ネットワークスペシャリスト・TOEICを無料で学べる資格学習サイト。"'
+          }
+          changed=0
+          for old,new in replacements.items():
+              n=s.count(old)
+              if n==1:
+                  s=s.replace(old,new,1); changed+=1
+              elif n==0 and new in s:
+                  print('Already patched:', new[:70])
+              else:
+                  raise SystemExit(f'Safety stop: unexpected match count {n} for {old[:70]}')
+          if '/aws-study/' not in s or '/network-specialist-study/' not in s or '/toeic-study/' not in s:
+              raise SystemExit('Safety stop: core study links missing')
+          p.write_text(s,encoding='utf-8')
+          print('Patched fields:', changed)
+          PY
+      - name: Commit
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add index.html
+          git diff --cached --quiet && exit 0
+          git commit -m "Improve ORIVECTOR sitewide SEO metadata"
+          git push
