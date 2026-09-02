@@ -4,39 +4,50 @@
   <url><loc>https://orivector.jp/about/</loc></url>
 
   <url><loc>https://orivector.jp/aws-study/</loc></url>
-  <url><loc>https://orivector.jp/aws-study/roadmap/</loc></url>
   <url><loc>https://orivector.jp/aws-study/about/</loc></url>
-  <url><loc>https://orivector.jp/aws-study/guide/</loc></url>
-  <url><loc>https://orivector.jp/aws-study/services/</loc></url>
-  <url><loc>https://orivector.jp/aws-study/ec2/</loc></url>
-  <url><loc>https://orivector.jp/aws-study/s3/</loc></url>
-  <url><loc>https://orivector.jp/aws-study/lambda/</loc></url>
-  <url><loc>https://orivector.jp/aws-study/iam/</loc></url>
-  <url><loc>https://orivector.jp/aws-study/rds-dynamodb/</loc></url>
-  <url><loc>https://orivector.jp/aws-study/route53-cloudfront/</loc></url>
-  <url><loc>https://orivector.jp/aws-study/security-services/</loc></url>
-  <url><loc>https://orivector.jp/aws-study/pricing/</loc></url>
-  <url><loc>https://orivector.jp/aws-study/shared-responsibility/</loc></url>
-  <url><loc>https://orivector.jp/aws-study/vpc/</loc></url>
-  <url><loc>https://orivector.jp/aws-study/cloudwatch-cloudtrail/</loc></url>
-  <url><loc>https://orivector.jp/aws-study/organizations-controltower/</loc></url>
-  <url><loc>https://orivector.jp/aws-study/well-architected/</loc></url>
-  <url><loc>https://orivector.jp/aws-study/regions-az/</loc></url>
-  <url><loc>https://orivector.jp/aws-study/elb-autoscaling/</loc></url>
-  <url><loc>https://orivector.jp/aws-study/sns-sqs-eventbridge/</loc></url>
-  <url><loc>https://orivector.jp/aws-study/cloudformation/</loc></url>
-  <url><loc>https://orivector.jp/aws-study/support-plans/</loc></url>
-  <url><loc>https://orivector.jp/aws-study/migration/</loc></url>
-  <url><loc>https://orivector.jp/aws-study/snow-family/</loc></url>
-  <url><loc>https://orivector.jp/aws-study/storage-gateway/</loc></url>
-  <url><loc>https://orivector.jp/aws-study/directconnect-vpn/</loc></url>
-  <url><loc>https://orivector.jp/aws-study/kms-secrets/</loc></url>
-  <url><loc>https://orivector.jp/aws-study/artifact-config/</loc></url>
-  <url><loc>https://orivector.jp/aws-study/containers/</loc></url>
-  <url><loc>https://orivector.jp/aws-study/analytics/</loc></url>
   <url><loc>https://orivector.jp/aws-study/ai-services/</loc></url>
+  <url><loc>https://orivector.jp/aws-study/analytics/</loc></url>
+  <url><loc>https://orivector.jp/aws-study/artifact-config/</loc></url>
   <url><loc>https://orivector.jp/aws-study/caf/</loc></url>
+  <url><loc>https://orivector.jp/aws-study/cloudformation/</loc></url>
+  <url><loc>https://orivector.jp/aws-study/cloudwatch-cloudtrail/</loc></url>
+  <url><loc>https://orivector.jp/aws-study/containers/</loc></url>
+  <url><loc>https://orivector.jp/aws-study/directconnect-vpn/</loc></url>
+  <url><loc>https://orivector.jp/aws-study/ec2/</loc></url>
+  <url><loc>https://orivector.jp/aws-study/elb-autoscaling/</loc></url>
   <url><loc>https://orivector.jp/aws-study/exam-tips/</loc></url>
+  <url><loc>https://orivector.jp/aws-study/guide/</loc></url>
+  <url><loc>https://orivector.jp/aws-study/iam/</loc></url>
+  <url><loc>https://orivector.jp/aws-study/kms-secrets/</loc></url>
+  <url><loc>https://orivector.jp/aws-study/lambda/</loc></url>
+  <url><loc>https://orivector.jp/aws-study/migration/</loc></url>
+  <url><loc>https://orivector.jp/aws-study/organizations-controltower/</loc></url>
+  <url><loc>https://orivector.jp/aws-study/pricing/</loc></url>
+  <url><loc>https://orivector.jp/aws-study/rds-dynamodb/</loc></url>
+  <url><loc>https://orivector.jp/aws-study/regions-az/</loc></url>
+  <url><loc>https://orivector.jp/aws-study/roadmap/</loc></url>
+  <url><loc>https://orivector.jp/aws-study/route53-cloudfront/</loc></url>
+  <url><loc>https://orivector.jp/aws-study/s3/</loc></url>
+  <url><loc>https://orivector.jp/aws-study/security-services/</loc></url>
+  <url><loc>https://orivector.jp/aws-study/services/</loc></url>
+  <url><loc>https://orivector.jp/aws-study/shared-responsibility/</loc></url>
+  <url><loc>https://orivector.jp/aws-study/snow-family/</loc></url>
+  <url><loc>https://orivector.jp/aws-study/sns-sqs-eventbridge/</loc></url>
+  <url><loc>https://orivector.jp/aws-study/storage-gateway/</loc></url>
+  <url><loc>https://orivector.jp/aws-study/support-plans/</loc></url>
+  <url><loc>https://orivector.jp/aws-study/vpc/</loc></url>
+  <url><loc>https://orivector.jp/aws-study/well-architected/</loc></url>
+  <url><loc>https://orivector.jp/aws-study/comparisons/</loc></url>
+  <url><loc>https://orivector.jp/aws-study/s3-vs-ebs-vs-efs/</loc></url>
+  <url><loc>https://orivector.jp/aws-study/cloudwatch-vs-cloudtrail/</loc></url>
+  <url><loc>https://orivector.jp/aws-study/ec2-vs-lambda/</loc></url>
+  <url><loc>https://orivector.jp/aws-study/alb-vs-nlb/</loc></url>
+  <url><loc>https://orivector.jp/aws-study/security-group-vs-nacl/</loc></url>
+  <url><loc>https://orivector.jp/aws-study/rds-vs-dynamodb/</loc></url>
+  <url><loc>https://orivector.jp/aws-study/direct-connect-vs-vpn/</loc></url>
+  <url><loc>https://orivector.jp/aws-study/sns-vs-sqs/</loc></url>
+  <url><loc>https://orivector.jp/aws-study/cost-explorer-vs-budgets/</loc></url>
+  <url><loc>https://orivector.jp/aws-study/clf-c02-study-plan/</loc></url>
 
   <url><loc>https://orivector.jp/network-specialist-study/</loc></url>
   <url><loc>https://orivector.jp/network-specialist-study/articles/</loc></url>
@@ -52,6 +63,18 @@
   <url><loc>https://orivector.jp/network-specialist-study/nat/</loc></url>
   <url><loc>https://orivector.jp/network-specialist-study/vpn/</loc></url>
   <url><loc>https://orivector.jp/network-specialist-study/firewall/</loc></url>
+  <url><loc>https://orivector.jp/network-specialist-study/comparisons/</loc></url>
+  <url><loc>https://orivector.jp/network-specialist-study/tcp-vs-udp/</loc></url>
+  <url><loc>https://orivector.jp/network-specialist-study/vlan-vs-subnet/</loc></url>
+  <url><loc>https://orivector.jp/network-specialist-study/ospf-vs-bgp/</loc></url>
+  <url><loc>https://orivector.jp/network-specialist-study/l2-vs-l3-switch/</loc></url>
+  <url><loc>https://orivector.jp/network-specialist-study/ipsec-vs-ssl-vpn/</loc></url>
+  <url><loc>https://orivector.jp/network-specialist-study/dns-troubleshooting/</loc></url>
+  <url><loc>https://orivector.jp/network-specialist-study/stp-vs-rstp/</loc></url>
+  <url><loc>https://orivector.jp/network-specialist-study/nat-vs-napt/</loc></url>
+  <url><loc>https://orivector.jp/network-specialist-study/mtu-fragmentation/</loc></url>
+  <url><loc>https://orivector.jp/network-specialist-study/network-specialist-study-plan/</loc></url>
+  <url><loc>https://orivector.jp/network-specialist-study/past-explanations/r7/</loc></url>
 
   <url><loc>https://orivector.jp/toeic-study/</loc></url>
   <url><loc>https://orivector.jp/toeic-study/articles/</loc></url>
