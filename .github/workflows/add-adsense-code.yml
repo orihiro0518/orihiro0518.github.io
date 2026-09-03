@@ -16,8 +16,8 @@ jobs:
           from pathlib import Path
           p=Path('index.html')
           s=p.read_text()
-          code='''<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1155599716593232" crossorigin="anonymous"></script>'''
-          if 'ca-pub-1155599716593232' not in s:
+          code='''<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1712701486247077" crossorigin="anonymous"></script>'''
+          if 'ca-pub-1712701486247077' not in s:
               s=s.replace('<head>', '<head>\n'+code, 1)
               p.write_text(s)
           PY
