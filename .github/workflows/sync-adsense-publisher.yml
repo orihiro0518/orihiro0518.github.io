@@ -21,8 +21,8 @@ jobs:
           python3 - <<'PY'
           from pathlib import Path
           import re
-          new = "ca-pub-" + "1155599716593232"
-          old = "ca-pub-" + "1712701486247077"
+          new = "ca-pub-" + "1712701486247077"
+          old = "ca-pub-" + "1155599716593232"
           loader = f'<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={new}" crossorigin="anonymous"></script>'
           pat = re.compile(r'<script\b[^>]*src=["\']https://pagead2\.googlesyndication\.com/pagead/js/adsbygoogle\.js\?client=ca-pub-\d+["\'][^>]*>\s*</script>\s*', re.I)
           changed=[]
@@ -51,5 +51,5 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -- '*.html'
           git diff --cached --quiet && exit 0
-          git commit -m "Normalize AdSense publisher ID"
+          git commit -m "Restore AdSense publisher ID"
           git push
