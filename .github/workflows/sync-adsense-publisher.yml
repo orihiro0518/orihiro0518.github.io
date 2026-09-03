@@ -1,0 +1,83 @@
+name: Sync AdSense publisher
+
+on:
+  push:
+    paths:
+      - '.github/workflows/sync-adsense-publisher.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Replace publisher ID and ensure loader exists
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+
+          old = "ca-pub-" + "1712701486247077"
+          new = "ca-pub-" + "1155599716593232"
+          loader = f'<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={new}" crossorigin="anonymous"></script>'
+          text_exts = {'.html', '.htm', '.yml', '.yaml', '.js', '.md', '.txt', '.xml'}
+          html_exts = {'.html', '.htm'}
+          changed = []
+          injected = []
+
+          for p in Path('.').rglob('*'):
+              if not p.is_file() or '.git' in p.parts or p.suffix.lower() not in text_exts:
+                  continue
+              try:
+                  original = p.read_text(encoding='utf-8')
+              except UnicodeDecodeError:
+                  continue
+              text = original.replace(old, new)
+              if p.suffix.lower() in html_exts and re.search(r'<head\b[^>]*>', text, flags=re.I):
+                  if 'pagead2.googlesyndication.com/pagead/js/adsbygoogle.js' not in text:
+                      text = re.sub(r'(<head\b[^>]*>)', r'\1\n' + loader, text, count=1, flags=re.I)
+                      injected.append(str(p))
+              if text != original:
+                  p.write_text(text, encoding='utf-8')
+                  changed.append(str(p))
+
+          leftovers = []
+          missing = []
+          for p in Path('.').rglob('*'):
+              if not p.is_file() or '.git' in p.parts or p.suffix.lower() not in text_exts:
+                  continue
+              try:
+                  text = p.read_text(encoding='utf-8')
+              except UnicodeDecodeError:
+                  continue
+              if old in text:
+                  leftovers.append(str(p))
+              if p.suffix.lower() in html_exts and re.search(r'<head\b[^>]*>', text, flags=re.I):
+                  if 'pagead2.googlesyndication.com/pagead/js/adsbygoogle.js' not in text or new not in text:
+                      missing.append(str(p))
+
+          print(f'changed files: {len(changed)}')
+          print(f'new loader injected: {len(injected)}')
+          if leftovers:
+              raise SystemExit('Old AdSense publisher ID remains in: ' + ', '.join(leftovers))
+          if missing:
+              raise SystemExit('AdSense loader/new publisher ID missing in HTML: ' + ', '.join(missing))
+          PY
+
+      - name: Commit changes
+        run: |
+          if git diff --quiet; then
+            echo "No changes needed"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Update AdSense publisher ID"
+          git push
