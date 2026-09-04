@@ -1,1 +1,0 @@
-document.addEventListener('DOMContentLoaded',()=>{const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);let node;while((node=walker.nextNode())){if(node.nodeValue.includes('250問'))node.nodeValue=node.nodeValue.replaceAll('250問','300問以上')}});
