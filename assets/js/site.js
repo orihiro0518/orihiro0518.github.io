@@ -1,1 +1,0 @@
-/* ORIVECTOR shared homepage behavior. Homepage JS will be migrated here incrementally. */
